@@ -1,2 +1,6 @@
 class Author < ApplicationRecord
-end
+    validates :email, presence: true, uniqueness: true
+    validates :name, presence: true
+  end
+
+  
